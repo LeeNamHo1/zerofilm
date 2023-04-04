@@ -68,7 +68,7 @@
                 <div  th:each="movie:${movieList}" class="swiper-slide chartSlider">
 
                   <div class="imgBox">
-                    <a th:href="x"> <img th:src="${movie.movieImg_main}"/></a>
+                    <a th:href="@{|/movie/de/${movie.id}}"> <img th:src="${movie.movieImg_main}"/></a>
                   </div>
                   <div class="txtBox">
                     <a th:href="@{|/movie/de/${movie.id}}"> <h2 class="title" th:text="${movie.movieNm}"></h2></a>
